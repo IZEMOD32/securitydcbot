@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security Bot — by Codex</title>
+    <meta name="description" content="Security Bot by Codex. Anti-Raid, Anti-Nuke, Anti-Spam, Verifikation und mehr.">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛡️</text></svg>">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<nav id="nav">
+    <div class="nav-inner">
+        <a href="#" class="brand">🛡️ Security Bot</a>
+        <div class="nav-mid" id="navMid">
+            <a href="#home">Home</a>
+            <a href="#features">Features</a>
+            <a href="#systems">Systeme</a>
+            <a href="#commands">Commands</a>
+            <a href="#faq">FAQ</a>
+        </div>
+        <div class="nav-end">
+            <a href="https://discord.com/oauth2/authorize?client_id=1477367588995731657&permissions=8&scope=bot%20applications.commands" target="_blank" class="nav-cta">Einladen <i class="fas fa-arrow-right"></i></a>
+            <button class="burger" id="burger"><span></span><span></span></button>
+        </div>
+    </div>
+</nav>
+
+<header class="hero" id="home">
+    <div class="hero-inner">
+        <div class="hero-left">
+            <p class="hero-eyebrow">by Codex — Discord Security</p>
+            <h1>Dein Server.<br>Dein Schutz.</h1>
+            <p class="hero-desc">Anti-Raid · Anti-Nuke · Anti-Spam · Anti-Phishing · Verifikation · Auto-Mod — alles in einem Bot. Kostenlos.</p>
+            <div class="hero-actions">
+                <a href="https://discord.com/oauth2/authorize?client_id=1477367588995731657&permissions=8&scope=bot%20applications.commands" target="_blank" class="btn-main"><i class="fab fa-discord"></i> Zu Discord hinzufügen</a>
+                <a href="#commands" class="btn-ghost">Commands ansehen →</a>
+            </div>
+            <div class="hero-nums">
+                <div class="hero-num"><strong id="hServers">—</strong><span>Server</span></div>
+                <div class="hero-num"><strong id="hUsers">—</strong><span>User</span></div>
+                <div class="hero-num"><strong>99.9%</strong><span>Uptime</span></div>
+            </div>
+        </div>
+        <div class="hero-right">
+            <div class="terminal">
+                <div class="term-bar"><span class="td r"></span><span class="td y"></span><span class="td g"></span><span class="term-title">security-bot</span></div>
+                <div class="term-body" id="termBody">
+                    <div class="tl"><span class="tp">$</span> security status</div>
+                    <div class="tl to"><span class="tok">✓</span> Anti-Raid <span class="tdim">···········</span> <span class="tgr">aktiv</span></div>
+                    <div class="tl to"><span class="tok">✓</span> Anti-Nuke <span class="tdim">···········</span> <span class="tgr">aktiv</span></div>
+                    <div class="tl to"><span class="tok">✓</span> Anti-Spam <span class="tdim">···········</span> <span class="tgr">aktiv</span></div>
+                    <div class="tl to"><span class="tok">✓</span> Anti-Phishing <span class="tdim">·····</span> <span class="tgr">aktiv</span></div>
+                    <div class="tl to"><span class="tok">✓</span> Verifikation <span class="tdim">·······</span> <span class="tgr">aktiv</span></div>
+                    <div class="tl to"><span class="tok">✓</span> Auto-Mod <span class="tdim">···········</span> <span class="tgr">aktiv</span></div>
+                    <div class="tl to"><span class="tok">✓</span> Logging <span class="tdim">·············</span> <span class="tgr">aktiv</span></div>
+                    <div class="tl"><span class="tp">$</span> <span class="cursor">_</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class="section" id="features">
+    <div class="wrap">
+        <div class="sec-top"><span class="eyebrow">Was Security Bot kann</span><h2>7 Schutzsysteme. 33+ Commands. Null Kosten.</h2></div>
+        <div class="grid4">
+            <div class="card"><div class="cnum">01</div><h3>Anti-Raid</h3><p>Erkennt Mass-Joins und sperrt deinen Server automatisch. Raider werden gekickt, gebannt oder in Quarantäne gesetzt.</p></div>
+            <div class="card"><div class="cnum">02</div><h3>Anti-Nuke</h3><p>Überwacht das Audit-Log in Echtzeit. Massen-Löschung von Channels, Rollen oder Bans wird sofort gestoppt.</p></div>
+            <div class="card"><div class="cnum">03</div><h3>Anti-Spam</h3><p>Nachrichtenflut, Mention-Spam, Emoji-Spam und doppelte Nachrichten werden automatisch erkannt und gelöscht.</p></div>
+            <div class="card"><div class="cnum">04</div><h3>Anti-Phishing</h3><p>Blockt Fake-Nitro-Links, Lookalike-Domains und Homoglyph-Angriffe. Sofortiges Timeout + DM-Warnung.</p></div>
+            <div class="card"><div class="cnum">05</div><h3>Verifikation</h3><p>Button oder CAPTCHA. 6-stelliger Code, 3 Versuche, 2 Minuten Timeout. Auto-Kick bei Fehlschlag.</p></div>
+            <div class="card"><div class="cnum">06</div><h3>Auto-Mod</h3><p>Verbotene Wörter, Discord-Invites, Links und Caps-Spam werden gefiltert. Automatische Warnungen.</p></div>
+            <div class="card"><div class="cnum">07</div><h3>Alt-Erkennung</h3><p>Accounts unter 7 Tagen werden automatisch geblockt. Schützt vor Alt-Account-Raids.</p></div>
+            <div class="card"><div class="cnum">+</div><h3>Logging & Backup</h3><p>Alle Events werden geloggt. Server-Backups erstellen und laden. Warnsystem mit Auto-Eskalation.</p></div>
+        </div>
+    </div>
+</section>
+
+<section class="section dark" id="systems">
+    <div class="wrap">
+        <div class="sec-top"><span class="eyebrow">Im Detail</span><h2>So arbeiten die Systeme</h2></div>
+        <div class="grid2">
+            <div class="sysblock">
+                <div class="syshead"><span class="sysico">🚨</span><div><h3>Anti-Raid</h3><span class="systag">Automatisch · Bei Mass-Joins</span></div></div>
+                <ul><li>Erkennt Mass-Joins (z.B. 10 Joins in 10 Sekunden)</li><li>Kickt / Bannt / Quarantänt alle Raider automatisch</li><li>Sperrt automatisch den ganzen Server (Lockdown)</li><li>Deaktiviert sich nach 5 Minuten automatisch</li><li>Whitegelistete User sind immun</li></ul>
+            </div>
+            <div class="sysblock">
+                <div class="syshead"><span class="sysico">☢️</span><div><h3>Anti-Nuke</h3><span class="systag">Überwachung · Audit-Log</span></div></div>
+                <ul><li>Massen-Channel-Löschung (3+ Channels)</li><li>Massen-Rollen-Löschung (3+ Rollen)</li><li>Massen-Bans (5+ User gebannt)</li><li>Massen-Kicks (5+ User gekickt)</li><li>Spam-Channel/Rollen-Erstellung</li><li>Prüft Audit-Log für den Verursacher</li><li>Bannt Angreifer + entfernt kompromittierte Bots</li></ul>
+            </div>
+            <div class="sysblock">
+                <div class="syshead"><span class="sysico">📨</span><div><h3>Anti-Spam</h3><span class="systag">Echtzeit · Smart Detection</span></div></div>
+                <ul><li>Schnelles Nachrichtenspammen (5 in 5s)</li><li>Mention-Spam (@everyone, viele Pings)</li><li>Emoji-Spam (zu viele Emojis)</li><li>Duplicate Messages (gleiche Nachricht)</li><li>Löscht Spam + Mute/Kick/Ban</li></ul>
+            </div>
+            <div class="sysblock">
+                <div class="syshead"><span class="sysico">🎣</span><div><h3>Anti-Phishing</h3><span class="systag">Immer aktiv · Link Scanner</span></div></div>
+                <ul><li>Bekannte Phishing-Domains blockiert</li><li>Lookalike-Domains (d1scord, dlscord)</li><li>Homoglyph-Angriffe erkannt</li><li>"Free Nitro" + Link Pattern</li><li>Sofort gelöscht + 1h Timeout</li><li>DM-Warnung an den User</li></ul>
+            </div>
+            <div class="sysblock">
+                <div class="syshead"><span class="sysico">👶</span><div><h3>Alt-Erkennung</h3><span class="systag">Bei Join · Account-Check</span></div></div>
+                <ul><li>Prüft Account-Alter bei jedem Join</li><li>Minimum: 7 Tage alt</li><li>Kick/Ban/Quarantäne bei zu jung</li><li>DM-Erklärung an den User</li></ul>
+            </div>
+            <div class="sysblock">
+                <div class="syshead"><span class="sysico">🔧</span><div><h3>Auto-Moderation</h3><span class="systag">Filter · Automatisch</span></div></div>
+                <ul><li>Verbotene Wörter (konfigurierbar)</li><li>Discord-Einladungslinks blockiert</li><li>Alle Links (ohne Berechtigung)</li><li>GROSSSCHREIBUNG (70%+ Caps)</li><li>Löscht + warnt User</li></ul>
+            </div>
+            <div class="sysblock">
+                <div class="syshead"><span class="sysico">✔️</span><div><h3>Verifikation</h3><span class="systag">Button oder CAPTCHA</span></div></div>
+                <ul><li>Button-Modus: Klick → Rolle</li><li>CAPTCHA-Modus: 6-stelliger Code</li><li>3 Versuche erlaubt</li><li>Code läuft nach 2 Min ab</li><li>Auto-Kick nach 3 Fehlversuchen</li></ul>
+            </div>
+            <div class="sysblock">
+                <div class="syshead"><span class="sysico">⚠️</span><div><h3>Auto-Warnsystem</h3><span class="systag">Eskalation · Automatisch</span></div></div>
+                <ul><li>1-2 Warnungen → Nur gespeichert</li><li>3+ Warnungen → 1h Auto-Mute</li><li>5+ Warnungen → Auto-Ban</li></ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="commands">
+    <div class="wrap">
+        <div class="sec-top"><span class="eyebrow">Alle Commands</span><h2>Komplette Befehlsreferenz</h2></div>
+        <div class="cmd-filter">
+            <button class="cmd-btn active" data-cat="security">🛡️ Security (22)</button>
+            <button class="cmd-btn" data-cat="moderation">🔨 Moderation (8)</button>
+            <button class="cmd-btn" data-cat="utility">🔧 Utility (3)</button>
+        </div>
+
+        <div class="cmd-panel active" data-cat="security">
+            <h4>Dashboard & Logging</h4>
+            <div class="ctable">
+                <div class="crow"><code>/security dashboard</code><span>Zeigt alle Security-Einstellungen</span><span class="perm">Admin</span></div>
+                <div class="crow"><code>/security logs <em>#channel</em></code><span>Log-Kanal setzen</span><span class="perm">Admin</span></div>
+            </div>
+            <h4>Anti-Raid</h4>
+            <div class="ctable">
+                <div class="crow"><code>/antiraid toggle <em>true/false</em></code><span>Anti-Raid ein/ausschalten</span><span class="perm">Admin</span></div>
+                <div class="crow"><code>/antiraid threshold <em>10 10</em></code><span>Max Joins & Zeitfenster einstellen</span><span class="perm">Admin</span></div>
+                <div class="crow"><code>/antiraid action <em>kick/ban/quarantine</em></code><span>Aktion bei Raid festlegen</span><span class="perm">Admin</span></div>
+                <div class="crow"><code>/antiraid status</code><span>Anti-Raid Einstellungen anzeigen</span><span class="perm">Admin</span></div>
+            </div>
+            <h4>Anti-Spam</h4>
+            <div class="ctable">
+                <div class="crow"><code>/antispam toggle <em>true/false</em></code><span>Anti-Spam ein/ausschalten</span><span class="perm">Admin</span></div>
+                <div class="crow"><code>/antispam config</code><span>Spam-Schwellenwerte konfigurieren</span><span class="perm">Admin</span></div>
+                <div class="crow"><code>/antispam status</code><span>Anti-Spam Einstellungen anzeigen</span><span class="perm">Admin</span></div>
+            </div>
+            <h4>Anti-Nuke</h4>
+            <div class="ctable">
+                <div class="crow"><code>/antinuke toggle <em>true/false</em></code><span>Anti-Nuke ein/ausschalten</span><span class="perm">Admin</span></div>
+                <div class="crow"><code>/antinuke action <em>ban/kick/removeRoles</em></code><span>Aktion bei Nuke-Versuch</span><span class="perm">Admin</span></div>
+                <div class="crow"><code>/antinuke status</code><span>Anti-Nuke Einstellungen anzeigen</span><span class="perm">Admin</span></div>
+            </div>
+            <h4>Lockdown & Quarantäne</h4>
+            <div class="ctable">
+                <div class="crow"><code>/lockdown <em>channel/server</em></code><span>Kanal oder Server sperren</span><span class="perm">Admin</span></div>
+                <div class="crow"><code>/unlock <em>channel/server</em></code><span>Kanal oder Server entsperren</span><span class="perm">Admin</span></div>
+                <div class="crow"><code>/quarantine add <em>@user</em></code><span>User isolieren (Rollen entfernen)</span><span class="perm">Admin</span></div>
+                <div class="crow"><code>/quarantine remove <em>@user</em></code><span>Aus Quarantäne entlassen</span><span class="perm">Admin</span></div>
+            </div>
+            <h4>Whitelist</h4>
+            <div class="ctable">
+                <div class="crow"><code>/whitelist add <em>@user</em></code><span>User whitelisten (immun)</span><span class="perm">Admin</span></div>
+                <div class="crow"><code>/whitelist remove <em>@user</em></code><span>Von Whitelist entfernen</span><span class="perm">Admin</span></div>
+                <div class="crow"><code>/whitelist list</code><span>Whitelist anzeigen</span><span class="perm">Admin</span></div>
+            </div>
+            <h4>Verifikation</h4>
+            <div class="ctable">
+                <div class="crow"><code>/verify setup <em>@role #ch button/captcha</em></code><span>Verifikation einrichten</span><span class="perm">Admin</span></div>
+                <div class="crow"><code>/verify panel</code><span>Verifikations-Panel senden</span><span class="perm">Admin</span></div>
+                <div class="crow"><code>/verify disable</code><span>Verifikation deaktivieren</span><span class="perm">Admin</span></div>
+            </div>
+            <h4>Backup</h4>
+            <div class="ctable">
+                <div class="crow"><code>/backup create</code><span>Server-Backup erstellen</span><span class="perm">Admin</span></div>
+                <div class="crow"><code>/backup list</code><span>Alle Backups anzeigen</span><span class="perm">Admin</span></div>
+                <div class="crow"><code>/backup info <em>ID</em></code><span>Backup-Details anzeigen</span><span class="perm">Admin</span></div>
+            </div>
+        </div>
+
+        <div class="cmd-panel" data-cat="moderation">
+            <h4>Moderation</h4>
+            <div class="ctable">
+                <div class="crow"><code>/ban <em>@user [reason] [days]</em></code><span>User bannen</span><span class="perm">Ban Members</span></div>
+                <div class="crow"><code>/kick <em>@user [reason]</em></code><span>User kicken</span><span class="perm">Kick Members</span></div>
+                <div class="crow"><code>/mute <em>@user 10m/1h/1d [reason]</em></code><span>User timeout geben</span><span class="perm">Mod Members</span></div>
+                <div class="crow"><code>/warn <em>@user reason</em></code><span>User verwarnen</span><span class="perm">Mod Members</span></div>
+                <div class="crow"><code>/warnings list <em>@user</em></code><span>Verwarnungen anzeigen</span><span class="perm">Mod Members</span></div>
+                <div class="crow"><code>/warnings clear <em>@user</em></code><span>Alle Verwarnungen löschen</span><span class="perm">Mod Members</span></div>
+                <div class="crow"><code>/warnings remove <em>ID</em></code><span>Einzelne Verwarnung löschen</span><span class="perm">Mod Members</span></div>
+                <div class="crow"><code>/purge <em>50 [@user]</em></code><span>Nachrichten löschen (1-100)</span><span class="perm">Manage Msgs</span></div>
+            </div>
+        </div>
+
+        <div class="cmd-panel" data-cat="utility">
+            <h4>Utility</h4>
+            <div class="ctable">
+                <div class="crow"><code>/userinfo <em>[@user]</em></code><span>User-Infos + Security-Flags</span><span class="perm all">Alle</span></div>
+                <div class="crow"><code>/serverinfo</code><span>Server-Informationen</span><span class="perm all">Alle</span></div>
+                <div class="crow"><code>/ping</code><span>Bot-Latenz prüfen</span><span class="perm all">Alle</span></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section dark" id="stats-section">
+    <div class="wrap">
+        <div class="statsbar">
+            <div class="si"><span class="sv" id="sServers">—</span><span class="sl">Server</span></div>
+            <div class="sep"></div>
+            <div class="si"><span class="sv" id="sUsers">—</span><span class="sl">User geschützt</span></div>
+            <div class="sep"></div>
+            <div class="si"><span class="sv">7</span><span class="sl">Schutzsysteme</span></div>
+            <div class="sep"></div>
+            <div class="si"><span class="sv">33+</span><span class="sl">Commands</span></div>
+            <div class="sep"></div>
+            <div class="si"><span class="sv">99.9%</span><span class="sl">Uptime</span></div>
+        </div>
+        <p class="stats-note">Live von Discord API · <button id="refreshBtn" class="rbtn"><i class="fas fa-sync-alt"></i> Aktualisieren</button></p>
+    </div>
+</section>
+
+<section class="section" id="faq">
+    <div class="wrap">
+        <div class="sec-top"><span class="eyebrow">FAQ</span><h2>Fragen & Antworten</h2></div>
+        <div class="faq-list">
+            <details class="faq"><summary>Ist Security Bot kostenlos?</summary><p>Ja, komplett. Alle Features, alle Commands, keine Limits. Von Codex für die Community.</p></details>
+            <details class="faq"><summary>Wer hat Security Bot entwickelt?</summary><p>Codex. Der Bot wird aktiv weiterentwickelt und verbessert.</p></details>
+            <details class="faq"><summary>Wie richte ich den Bot ein?</summary><p>Bot einladen → <code>/security dashboard</code> → Systeme aktivieren mit z.B. <code>/antiraid toggle true</code></p></details>
+            <details class="faq"><summary>Welche Berechtigungen braucht der Bot?</summary><p>Administrator wird empfohlen für volle Funktionalität aller 7 Schutzsysteme.</p></details>
+            <details class="faq"><summary>Was passiert bei einem Raid?</summary><p>Anti-Raid erkennt Mass-Joins → Lockdown → Raider werden bestraft → Lockdown endet nach 5 Min automatisch.</p></details>
+            <details class="faq"><summary>Wie funktioniert die Verifikation?</summary><p>Button (klicken) oder CAPTCHA (6-stelliger Code, 3 Versuche). Setup: <code>/verify setup @rolle #kanal captcha</code></p></details>
+            <details class="faq"><summary>Was macht Anti-Nuke?</summary><p>Überwacht Audit-Log. Massen-Löschung von Channels/Rollen oder Massen-Bans → Angreifer wird sofort gestoppt.</p></details>
+            <details class="faq"><summary>Sind die Stats echt?</summary><p>Ja, direkt von der Discord API. Aktualisierung alle 5 Minuten.</p></details>
+        </div>
+    </div>
+</section>
+
+<section class="cta-section">
+    <div class="wrap cta-inner">
+        <h2>Schütze deinen Server.</h2>
+        <p>Kostenlos. Keine Limits. Von Codex.</p>
+        <a href="https://discord.com/oauth2/authorize?client_id=1477367588995731657&permissions=8&scope=bot%20applications.commands" target="_blank" class="btn-main btn-big"><i class="fab fa-discord"></i> Security Bot einladen</a>
+    </div>
+</section>
+
+<footer>
+    <div class="wrap foot">
+        <div class="foot-left">
+            <span class="brand">🛡️ Security Bot</span>
+            <p>by Codex · Kostenlos · Zuverlässig</p>
+        </div>
+        <div class="foot-links">
+            <a href="#features">Features</a>
+            <a href="#systems">Systeme</a>
+            <a href="#commands">Commands</a>
+            <a href="#faq">FAQ</a>
+            <a href="https://discord.com/oauth2/authorize?client_id=1477367588995731657&permissions=8&scope=bot%20applications.commands" target="_blank">Bot einladen</a>
+        </div>
+        <div class="foot-right"><p>© 2025 Codex</p></div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
