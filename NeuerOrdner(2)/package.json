@@ -1,9 +1,0 @@
-{
-  "name": "security-bot-website",
-  "version": "1.0.0",
-  "private": true,
-  "description": "Security Bot Website by Codex",
-  "dependencies": {
-    "node-fetch": "2"
-  }
-}
